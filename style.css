@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.listitem ul,ol{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+ul{
+    list-style: decimal;
+}
+
+
+.header_menu {
+    background: red;
+}
+.header_menu ul{
+    text-align: center;
+}
+.header_menu ul li{
+    display: inline-block;
+    margin: 0 -4px;
+   
+    /* text-align: center; */
+}
+.header_menu ul li a{
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+.header_menu ul li:first-child a {
+    border-left: 1px solid #fff;
+}
+.header_menu ul li:hover > a{
+   
+    background: #f3dd13;
+}
+
+
+/* Dropdown Menu */
+
+.header_menu ul li{
+    position: relative;
+}
+
+.header_menu ul li ul{
+   position: absolute;
+   left: 0;
+   top: 100%;
+   width: 233px;
+   background: rgb(235, 14, 14);
+   border-top: 1px solid #fff;
+
+   transition: .4s;
+}
+.header_menu ul li ul li{
+    display: block;
+    margin: 0 ;
+}
+.header_menu ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.header_menu ul ul li:first-child a {
+    border-left: none;
+   
+}
+
+/* hover part */
+.header_menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.header_menu ul li:hover ul{
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* 2nd  Dropdown Menu */
+
+.header_menu ul li ul li{
+    position: relative;
+}
+
+.header_menu ul li ul li ul{
+   position: absolute;
+   left: 100%;
+   top: 0;
+   width: 233px;
+   background: rgb(235, 14, 14);
+   border-top: 1px solid #fff;
+
+   transition: .4s;
+}
+.header_menu ul li ul li ul li{
+    display: block;
+    margin: 0 ;
+}
+.header_menu ul li ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.header_menu ul ul li ul li:first-child a {
+    border-left: none;
+   
+}
+
+/* hover part */
+.header_menu ul li ul li ul{
+   display: none;
+}
+.header_menu ul li ul li:hover ul{
+    display: block;
+}
+   
+
+
+/* social menu */
+
+.social_meni{
+    margin-top: 100px;
+}
+.social_meni ul{
+    text-align: center;
+}
+.social_meni ul li{
+    display: inline-block;
+}
+.social_meni ul li a{
+    color: #fff;
+    background: #9b59b6;
+    margin-left: 5px;
+    margin-right: 15px;
+    font-size: 40px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    line-height: 100px;
+    border-radius: 50%;
+    
+}
+
